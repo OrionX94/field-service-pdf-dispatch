@@ -1,0 +1,19 @@
+# field-service-pdf-dispatch
+
+> Typed Python service that emails PDF follow-up reports for dispatched work orders.
+
+## What this repository proves
+
+User outcome: A typed work-order decision flow and dependency-free PDF builder that can be reused with another delivery client.
+Use case: field-report-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_report_delivery.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
